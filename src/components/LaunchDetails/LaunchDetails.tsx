@@ -16,7 +16,7 @@ const LaunchDetails:React.FC<Props>=({data})=> {
               <div className='LaunchDetailsStatus'>
       <span>Flight {data.launch.flight_number}</span>
               </div>
-             <h1>
+             <h1 className='LaunchDetailsTitle'>
                  {data.launch.mission_name}- {data.launch.rocket?.rocket_name}
              </h1>
           
@@ -24,15 +24,15 @@ const LaunchDetails:React.FC<Props>=({data})=> {
       <p>{data.launch.details}</p>
 
 
-          <div className="LaunchDetailsImage-List">
+          <div className="LaunchDetailsImageList">
         
-          {/*!!data.launch.links && !!data.launch.links.flickr_images &&(
+          {!!data.launch.links && !!data.launch.links.flickr_images &&(
              <div>
                  {data.launch.links.flickr_images.map(image=>
-                    image? <img src={image}/> : null
+                    image? <img src={image} className='LaunchDetailsImage' /> : null
                      )}  
                   </div>
-                 ) */}    
+                 ) }    
 
 </div>
           </div>
