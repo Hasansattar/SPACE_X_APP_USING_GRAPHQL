@@ -40,4 +40,4 @@ jobs:
       run: npm install --global surge
      
     - name: deploying on surge
-      run: surge ./build http://spacexapp.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build http://space_x_app.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
