@@ -29,7 +29,7 @@ const LaunchDetails:React.FC<Props>=({data})=> {
           {!!data.launch.links && !!data.launch.links.flickr_images &&(
              <div>
                  {data.launch.links.flickr_images.map(image=>
-                    image? <img src={image} className='LaunchDetailsImage' /> : null
+                    image? <img src={image} className='LaunchDetailsImage' alt='image' /> : null
                      )}  
                   </div>
                  ) }    

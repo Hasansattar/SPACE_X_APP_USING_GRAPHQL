@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
  
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {gql,ApolloProvider,InMemoryCache,ApolloClient} from '@apollo/client'
+import {ApolloProvider,InMemoryCache,ApolloClient} from '@apollo/client'
 
 
 const client= new ApolloClient({
